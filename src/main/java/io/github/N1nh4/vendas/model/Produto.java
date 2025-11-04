@@ -1,0 +1,26 @@
+package io.github.N1nh4.vendas.model;
+
+import java.math.BigDecimal;
+
+import jakarta.persistence.Entity;
+// import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.Id;
+import lombok.AllArgsConstructor;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.Setter;
+
+@Getter
+@Setter
+@NoArgsConstructor
+@AllArgsConstructor
+@Entity
+public class Produto {
+    @Id
+    // @GeneratedValue(Strategy = GeneratedType.IDENTITY)
+    private Long id;
+    private String sku; 
+    private BigDecimal preco;
+    private String nome;
+    private String descricao;
+}
