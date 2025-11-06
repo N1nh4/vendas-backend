@@ -1,8 +1,5 @@
 package io.github.N1nh4.vendas.model;
 
-import java.math.BigDecimal;
-import java.time.LocalDate;
-
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
@@ -17,13 +14,11 @@ import lombok.Setter;
 @NoArgsConstructor
 @AllArgsConstructor
 @Entity
-public class Produto {
+public class Usuario {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
-    private String sku; 
-    private BigDecimal preco;
+    
     private String nome;
-    private String descricao;
-    private LocalDate dataCadastro;
+    private String email;
 }
